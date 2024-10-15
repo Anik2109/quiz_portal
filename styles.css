@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* HEADER SECTION */
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.login-btn {
+    background-color: rgb(230, 229, 229);
+    color: #333;
+    transition: background-color 0.3s ease;
+
+}
+.signup-btn {
+    background-color: rgb(230, 229, 229);
+    color: #333;
+}
+.login-btn:hover {
+    background-color: #007BFF;
+    color: white;
+}
+.signup-btn:hover {
+    background-color: #007BFF;
+    color: white;
+}
+.menu a:hover {
+    color: #007BFF; /* Highlight color for active link */
+    font-weight: bold;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin-top: 23px;
+}
+
+.hero-img {
+    display: flex;
+    min-height: 480px;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    gap: 6px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), 
+                      url("Assets/Index/hero-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 3%;
+    position: relative; 
+}
+.hero-text {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY( -20%);
+    text-align: left;
+    color: white;
+    padding: 0px 16px;
+    width: auto;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.start-btn {
+    padding: 10px 40px;
+    font-size: larger;
+    background-color: #007BFF;
+    color: white;
+    align-items: center;
+    border: none;
+    border-radius:  24px 0 24px 0;
+    cursor: pointer;
+}

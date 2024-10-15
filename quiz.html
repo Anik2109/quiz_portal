@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Portal</title>
+    <link rel="stylesheet" href="quiz.css"/>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <nav>
+            
+            <div class="logo">QuizLab</div>
+            <div class="nav-right">
+                <ul class="menu">
+                    <li><a href="/Quiz/index.html">Home</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Signup</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- QUIZ SECTION -->
+    <div id="timer">00:20</div>
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+
+    <div id="quiz-container">
+        <form id="quiz">
+            <div id="question-container">
+                <div id="score"></div>
+            </div>
+
+            <div id="navigation">
+                <button type="button" id="quiz_next_btn" onclick="nextQuestion()">Next</button>
+                <button type="button" id="quiz_submit_btn" onclick="submitQuiz()" style="display:none;">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <button id="reset-btn" type="submit" onclick="retryQuiz()">Restart</button>
+
+</body>
+<script src="script_quiz.js"></script>
+</html>
